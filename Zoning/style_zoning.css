@@ -1,0 +1,341 @@
+/* Style du zoning de l'interface */
+
+#conteneur{
+    
+    height:auto;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#Zone1{
+
+    width:100%;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#head{
+
+    background:rgb(240, 7, 7);
+    width:100%;
+    height:100px;
+
+}
+
+
+#nav{
+
+    background:rgb(239, 243, 1);
+    width:80%;
+    height:100px;
+    
+}
+
+#Zone2{
+
+    width:100%;
+    height: 600px;
+    background: blueviolet;
+    display: flex;
+    align-content: center;
+    
+
+}
+
+#logo{
+
+    background:rgb(44, 181, 235);
+    width:10%;
+    height: 120px;
+    position: relative;
+    bottom: 60%;
+    left: 5%;
+    z-index: 1000000;
+
+}
+
+
+#texte1et2{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height:600px;
+    background-color: rgb(73, 7, 7); 
+    z-index: 1998;
+    
+    
+}
+
+
+#texte1{
+
+    background: rgb(109, 175, 109);
+    width:99%; 
+    height:100px;
+    position:absolute;
+    z-index: 2000;
+    border: 0,5px solid black; 
+
+    
+}
+
+#texte2{
+
+    background: blue;
+    width:100%;
+    height: 400px;
+    z-index: 1999;
+    
+  
+}
+
+#texte3{
+
+    background: blue;
+    width:100%;
+    height: 400px;
+    z-index: 1999;
+    
+    
+}
+
+#logo2{
+
+    background: rgb(248, 71, 71);
+    width:100%;
+    height: 600px;
+    z-index: 1999;
+    
+
+}
+
+#Zone3{
+
+    background:green;
+    width:90%;
+    height: 150px;
+    margin: auto;
+    
+}
+
+#Zone4{
+
+    background:rgb(4, 4, 54);
+    width:100%;
+    height: 500px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    
+}
+
+#Box1{
+    
+    background: burlywood;
+    width:80%;
+    height:50px;
+    margin: auto;
+    z-index: 100;
+    
+}
+
+#Box2{
+
+    background:beige;
+    width:25%;
+    height:430px;
+    z-index: 1;
+    
+}
+
+#Box3{
+    background:grey;
+    width:25%;
+    height:430px;
+    z-index: 1;
+}
+
+#Box4{
+    background:violet;
+    width:25%;
+    height:430px;
+    z-index: 1;
+}
+
+#Box5{
+    background:mediumseagreen;
+    width:25%;
+    height:430px;
+    z-index: 1;
+    
+ }
+#Zone5{
+    background: magenta;
+    width:100%;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#Box6{
+    background:black;
+    width:20%;
+    height:270px;
+}
+
+#Box7{
+    background:black;
+    width:20%;
+    height:270px;
+}
+
+#Box8{
+    background:black;
+    width:20%;
+    height:270px;
+}
+
+#Zone6{
+    background: maroon;
+    width:100%;
+    height: 100px;
+}
+
+/* Media Query */
+
+@media(max-width:1200px){
+
+    #logo{
+    width:10%;
+    height: 90px;
+    }
+    
+    #nav{
+    width:70%;
+    }
+    }
+    
+    
+@media(max-width:992px){
+    #nav{
+        width:70%;
+        }
+
+    #Zone4{
+        display: flex;
+
+    }
+    #Box2,#Box3,#Box4,#Box5{
+        width: 80%;
+        margin:auto
+    }
+
+}
+
+
+@media(max-width:768px){
+    
+    #Zone1{
+        height:50px;
+        width:100%;
+        
+    }
+
+    #nav{
+        height:100%;
+        width:100%;
+
+        }
+
+    #head{
+       display: none;
+    }
+    
+    #logo{
+        width:20%;
+    }
+
+    #Zone2{
+
+        flex-direction: column;
+        
+
+    }
+
+    #Zone4{
+        flex-direction: column;
+       
+    }
+
+    #Box2,#Box3,#Box4,#Box5{
+        width: 90%;
+        margin:auto
+    }
+
+    #Zone5{
+        flex-direction: column;
+    }
+    
+    #Box6,#Box7,#Box8{
+        width: 80%;
+        margin:auto;
+    }
+    
+
+@media(max-width:540px){
+    
+    #Zone1{
+        height:50px;
+        width:100%;
+        
+    }
+
+    #nav{
+        height:100%;
+        width:100%;
+
+        }
+
+    #head{
+       display: none;
+    }
+    
+    #logo{
+        width:20%;
+    }
+
+    #Zone2{
+
+        flex-direction: column;
+        
+
+    }
+
+    #Zone4{
+        flex-direction: column;
+       
+    }
+
+    #Box2,#Box3,#Box4,#Box5{
+        width: 90%;
+        margin:auto
+    }
+
+    #Zone5{
+        flex-direction: column;
+    }
+    
+    #Box6,#Box7,#Box8{
+        width: 80%;
+        margin:auto;
+    }
+} 
